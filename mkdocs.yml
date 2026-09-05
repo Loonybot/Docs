@@ -6,3 +6,9 @@ theme:
 
 nav:
   - Home: index.md
+
+plugins:
+  - search
+
+remote_url: https://github.com/loonybot/loonybot.github.io.git
+
