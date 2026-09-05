@@ -1,3 +1,3 @@
-# Sidekick Documentation
+# Loonybot Software
 
-Welcome to the Sidekick docs. Content coming soon.
+Welcome to the documentation for Sidekick RC. Content coming soon.
