@@ -2,3 +2,32 @@
 .md-footer-meta {
   display: none;
 }
+
+/* Home page hero: robot image filling the viewport behind the welcome message */
+.hero-robot {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.12;
+}
+
+.hero-message {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  max-width: 32rem;
+  z-index: 1;
+}
+
+/* Suppress the sticky header's page-title line ("Home") on the hero page */
+body:has(.hero-robot) [data-md-component="header-topic"] {
+  display: none;
+}
+
+
