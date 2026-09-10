@@ -1,0 +1,4 @@
+/* Hide the empty footer meta bar (copyright/generator/social row) */
+.md-footer-meta {
+  display: none;
+}
