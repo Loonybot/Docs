@@ -10,7 +10,7 @@ hide:
 <div class="hero-message" markdown>
 
 # Loonybot Software
-Quality software tools for FTC Robotics
+Essential software tools for FTC Robotics
 
 [Get started with Sidekick RC :material-arrow-right:](sidekick-rc/index.md){ .md-button .md-button--primary }
 
