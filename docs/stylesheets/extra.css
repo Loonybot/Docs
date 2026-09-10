@@ -3,13 +3,19 @@
   display: none;
 }
 
-/* Home page hero: robot image filling the viewport behind the welcome message */
+/* Home page hero: robot image filling the viewport behind the welcome message.
+   Uses in-flow relative/absolute positioning (not `fixed`) since fixed
+   positioning combined with 100vh is unreliable on mobile Safari/iPadOS. */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
 .hero-robot {
-  position: fixed;
-  top: 3rem; /* below the sticky header */
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  inset: 0;
   z-index: 0;
   pointer-events: none;
   background-image: url("../assets/logo.svg");
@@ -19,16 +25,8 @@
   opacity: 0.12;
 }
 
-/* On wide viewports the tabs bar also occupies space above the content */
-@media screen and (min-width: 76.25em) {
-  .hero-robot {
-    top: 6rem;
-  }
-}
-
-
 .hero-message {
-  position: fixed;
+  position: absolute;
   left: 1.5rem;
   bottom: 1.5rem;
   right: 1.5rem;
