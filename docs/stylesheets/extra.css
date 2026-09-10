@@ -6,7 +6,10 @@
 /* Home page hero: robot image filling the viewport behind the welcome message */
 .hero-robot {
   position: fixed;
-  inset: 0;
+  top: 3rem; /* below the sticky header */
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 0;
   pointer-events: none;
   background-image: url("../assets/logo.svg");
@@ -15,6 +18,14 @@
   background-size: contain;
   opacity: 0.12;
 }
+
+/* On wide viewports the tabs bar also occupies space above the content */
+@media screen and (min-width: 76.25em) {
+  .hero-robot {
+    top: 6rem;
+  }
+}
+
 
 .hero-message {
   position: fixed;
