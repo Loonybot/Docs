@@ -4,11 +4,8 @@ categories:
   - Announcements
 ---
 
-# Welcome to the Sidekick RC blog
+# Welcome to Loonybot Software
 
-This is a sample post. Replace it with your first real announcement.
+We'll post here about our products as we release them.
 
-<!-- more -->
 
-Longer post content goes here, below the `<!-- more -->` marker, which controls
-where the excerpt is truncated on the blog index page.
