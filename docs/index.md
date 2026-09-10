@@ -9,8 +9,9 @@ hide:
 
 <div class="hero-message" markdown>
 
+<!-- This have to use single '#' otherwise "Home" header appears -->
 # Loonybot Software
-Essential software tools for FTC Robotics
+Software tools for FTC Robotics
 
 [Get started with Sidekick RC :material-arrow-right:](sidekick-rc/index.md){ .md-button .md-button--primary }
 

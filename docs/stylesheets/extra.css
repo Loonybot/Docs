@@ -5,12 +5,22 @@
 
 /* Home page hero: robot image filling the viewport behind the welcome message.
    Uses in-flow relative/absolute positioning (not `fixed`) since fixed
-   positioning combined with 100vh is unreliable on mobile Safari/iPadOS. */
+   positioning combined with 100vh is unreliable on mobile Safari/iPadOS.
+   Height is reduced by the header's in-flow space (3rem) so the hero plus
+   header exactly fill the viewport instead of forcing a scroll. */
 .hero {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
   overflow: hidden;
+}
+
+/* On wide viewports the tabs bar also occupies in-flow space above the hero */
+@media screen and (min-width: 76.25em) {
+  .hero {
+    min-height: calc(100vh - 6rem);
+    min-height: calc(100dvh - 6rem);
+  }
 }
 
 .hero-robot {
@@ -28,7 +38,7 @@
 .hero-message {
   position: absolute;
   left: 1.5rem;
-  bottom: 1.5rem;
+  top: 1.5rem; /* Specify 'bottom' to position at bottom */
   right: 1.5rem;
   max-width: 32rem;
   z-index: 1;
