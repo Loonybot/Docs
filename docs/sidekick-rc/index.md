@@ -8,7 +8,7 @@ FTC's Wi-Fi and wireless Android Debug Bridge (ADB) connections are notoriously 
     - A single button to connect to the robot via Wi-Fi and the ADB;
     - Fewer dropped connections;
     - Easy and robust recovery when ADB hangs.
-- Monitor your robot's hardware in real-time. Graph the robot's performance in real-time, with monitoring of the current draw across components as well as deep system performance metrics such as temperature and CPU usage, etc.
+- Monitor your robot's hardware as it runs. Graph the robot's real-time performance to observe performance characteristics such as the current draw, hub temperature, and CPU usage.
 - Record a wealth of data for offline analysis, automatically, with no work needed by you. Context is essential for debugging and performance work. Without perturbing your robot's performance, **Sidekick** automatically records:
     - All your calls that interact with the hardware, including parameters and results.
     - All "bulk" data from an API call to a device that invokes a bulk read. (So it gets free over-current warnings from motors, for example.) 

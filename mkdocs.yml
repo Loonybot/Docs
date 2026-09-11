@@ -34,15 +34,12 @@ theme:
 nav:
   - Home: index.md
   - Sidekick RC:
-      - sidekick-rc/index.md
-      - GETTING STARTED:
-          - sidekick-rc/getting-started/overview.md
-          - sidekick-rc/getting-started/installation.md
-      - USER GUIDE:
-          - sidekick-rc/user-guide/usage.md
-          - sidekick-rc/user-guide/disabling.md
-      - API REFERENCE:
-        - Configuration: sidekick-rc/configuration.md
+      - About: sidekick-rc/index.md
+      - Overview: sidekick-rc/overview.md
+      - Installation: sidekick-rc/installation.md
+      - Usage: sidekick-rc/usage.md
+      - Disabling: sidekick-rc/disabling.md
+      - API Reference: sidekick-rc/api-reference.md
       - FAQ: sidekick-rc/faq.md
       - Release Notes: sidekick-rc/release-notes.md
   - Additional Tools:

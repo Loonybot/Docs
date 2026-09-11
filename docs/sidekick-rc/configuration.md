@@ -1,3 +1,0 @@
-# Configuration
-
-Content coming soon.
