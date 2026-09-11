@@ -34,15 +34,14 @@ theme:
 nav:
   - Home: index.md
   - Sidekick RC:
-      - About: sidekick-rc/index.md
-      - Overview: sidekick-rc/overview.md
+      - Introducing Sidekick RC: sidekick-rc/index.md
+      - Defining Sidekick RC: sidekick-rc/overview.md
       - Installation: sidekick-rc/installation.md
       - Usage: sidekick-rc/usage.md
-      - Disabling: sidekick-rc/disabling.md
       - API Reference: sidekick-rc/api-reference.md
       - FAQ: sidekick-rc/faq.md
       - Release Notes: sidekick-rc/release-notes.md
-  - Additional Tools:
+  - More Tools:
       - additional-tools/index.md
   - Blog:
       - blog/index.md

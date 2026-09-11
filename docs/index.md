@@ -15,7 +15,7 @@ Software tools for FTC Robotics
 
 [Get started with Sidekick RC :material-arrow-right:](sidekick-rc/index.md){ .md-button .md-button--primary }
 
-[Additional tools :material-arrow-right:](additional-tools/index.md){ .md-button .md-button--primary }
+[More tools :material-arrow-right:](additional-tools/index.md){ .md-button .md-button--primary }
 
 </div>
 
