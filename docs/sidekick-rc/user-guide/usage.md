@@ -1,3 +1,3 @@
-# Basic Usage
+# Usage
 
 Content coming soon.

@@ -25,6 +25,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.indexes
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -34,16 +35,18 @@ nav:
   - Home: index.md
   - Sidekick RC:
       - sidekick-rc/index.md
-      - Getting Started:
+      - GETTING STARTED:
           - sidekick-rc/getting-started/overview.md
           - sidekick-rc/getting-started/installation.md
-      - User Guide:
-          - sidekick-rc/user-guide/basic-usage.md
-          - sidekick-rc/user-guide/advanced-usage.md
-      - Configuration: sidekick-rc/configuration.md
-      - Troubleshooting: sidekick-rc/troubleshooting.md
+      - USER GUIDE:
+          - sidekick-rc/user-guide/usage.md
+          - sidekick-rc/user-guide/disabling.md
+      - API REFERENCE:
+        - Configuration: sidekick-rc/configuration.md
       - FAQ: sidekick-rc/faq.md
       - Release Notes: sidekick-rc/release-notes.md
+  - Additional Tools:
+      - additional-tools/index.md
   - Blog:
       - blog/index.md
 
