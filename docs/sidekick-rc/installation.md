@@ -1,7 +1,7 @@
 # Installation
-Here we detail how to install the two components of **Sidekick**: the library and the PC application.
+Here is how to install the two components of **Sidekick**: the library and the PC application.
 
-## 1. Install the Library (If Someone on Your Team Hasn't Already)
+## 1. Install the library (if someone on your team hasn't already)
 Go to the [Loonybot GitHub SidekickRC releases](https://github.com/Loonybot/SidekickRC/releases) page and find the newest version labeled "Sidekick RC Library". Follow the installation instructions there. 
 
 If you had a minimal **build.gradle**, your resulting file should look like the following, with the changes highlighted. 
@@ -35,7 +35,7 @@ Note that you shouldn't actually see `v??.??.??` in your **build.gradle** file b
 
 Once you're done modifying **build.gradle**, don't forget to sync your project with the updated Gradle file by pressing the Elephant icon in the top-right corner of Android Studio.
 
-## 2. Install the Application on Your PC
+## 2. Install the app on your PC
 If you have a Windows PC, go to the [Loonybot GitHub SidekickRC releases](https://github.com/Loonybot/SidekickRC/releases) page and find the newest version labeled "Sidekick RC application". Click `SidekickRCsetup.exe` under "Assets" to install Sidekick RC for Windows.
 
 If you have a Mac PC, sorry, you'll have to wait until we port.
@@ -69,7 +69,7 @@ Because the **Sidekick** application is new, Windows Defender may flag it as an 
     Select "Keep anyway" and then it should install.
 
 
-## Verify Your Install
+## Verify your install
 Once you've installed the **Sidekick** application and are running robot code that includes the **Sidekick** library, connect to the robot. 
 (Use the `Connect` button in the app if you're not already Wi-Fi connected.) 
 If everything is working correctly, you should see a green "Connected" status for "Sidekick" in the status bar at the bottom-right edge of the window. 

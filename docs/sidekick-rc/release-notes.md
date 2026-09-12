@@ -1,3 +1,3 @@
 # Release Notes
 
-Content coming soon.
+**Sidekick RC** is currently in BETA.

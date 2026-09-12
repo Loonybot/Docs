@@ -11,7 +11,7 @@ hide:
 
 <!-- This have to use single '#' otherwise "Home" header appears -->
 # Loonybot Software
-Software tools for FTC Robotics
+Software tools for FTC robotics
 
 [Get started with Sidekick RC :material-arrow-right:](sidekick-rc/index.md){ .md-button .md-button--primary }
 
