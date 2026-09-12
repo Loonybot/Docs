@@ -16,14 +16,14 @@ FTC's Wi-Fi and wireless Android Debug Bridge (ADB) connections are notoriously 
     - System performance including CPU utilization, CPU clock, CPU temperature, etc.
     - Thread performance.
     - All Logcat data.
-    - `telemetry.addValue()`, `addLine()` and all other telemetry calls you're already making.
+    - `telemetry.addValue()`, `addLine()` and all other telemetry calls.
     - All Gamepad input.
     - The robot's configuration of devices.
     - All FTC Dashboard Canvas visualizations.
     - The Limelight camera stream, complete with visualizations.
-    - The camera stream of regular cameras. Accomplished by recording an MP4 video of all visualizations output to the screen when ADB is connected.
+    - The camera stream of regular cameras when ADB is connected. **Sidekick** records an MP4 of all visualizations that are output to the Robot Controller's "screen".
 - **Benefit from automatic analysis.** *Dr. Roboto* is a built-in mentor that diligently examines all recorded data and makes suggestions and points out errors and warnings, based on years of real-life mentoring experience. It addresses both performance and correctness.
-- **Enjoy intuitive analysis for humans.** It loves to graph and make it easy to navigate and understand all the data.
+- **Enjoy intuitive analysis for humans.** It loves to graph and make it easy to navigate and understand the data.
 - **Extend its functionality.** Use optional API calls to enable features such as run-time assertions and performance timing.
 - **Back up your configuration.** We've had our robot configuration wiped more than once. Now it's saved after every opMode and can be restored with a single button.
 
