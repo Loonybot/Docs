@@ -40,8 +40,8 @@ nav:
       - API Reference: sidekick-rc/api-reference.md
       - FAQ: sidekick-rc/faq.md
       - Release Notes: sidekick-rc/release-notes.md
-  - More Tools:
-      - additional-tools/index.md
+  # - More Tools:
+  #     - additional-tools/index.md
   - Blog:
       - blog/index.md
 
