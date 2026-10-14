@@ -1,5 +1,5 @@
 # Installation
-Here is how to install the two components of **Sidekick**: the library and the PC application.
+Here's how to install the library and PC application components of **Sidekick**.
 
 ## 1. Install the library (if someone on your team hasn't already)
 Go to the [Loonybot GitHub SidekickRC releases](https://github.com/Loonybot/SidekickRC/releases) page and find the newest version labeled "Sidekick RC Library". Follow the installation instructions there. 
@@ -38,7 +38,7 @@ Once you're done modifying **build.gradle**, don't forget to sync your project w
 ## 2. Install the app on your PC
 If you have a Windows PC, go to the [Loonybot GitHub SidekickRC releases](https://github.com/Loonybot/SidekickRC/releases) page and find the newest version labeled "Sidekick RC application". Click `SidekickRCsetup.exe` under "Assets" to install Sidekick RC for Windows.
 
-If you have a Mac PC, sorry, you'll have to wait until we port.
+If you have a Mac PC, please wait until we finish our port.
 
 !!!note
     When you're looking for the install package on GitHub, the Assets tab may be collapsed:
@@ -49,7 +49,7 @@ If you have a Mac PC, sorry, you'll have to wait until we port.
 
     ![Expanded assets](../assets/install-app-with-assets.png)
 
-Because the **Sidekick** application is new, Windows Defender may flag it as an unrecognized app when you run SidekickRCsetup.exe. If you see a "Windows protected your PC" dialog, click on the "**More Info**" button and verify that the publisher is James Goossen in Sammamish (that's me!). If it is, press "**Run anyway**" to install. Once enough people have installed Sidekick, Defender will start recognizing it and the warning will no longer appear.
+Because the **Sidekick** application is new, Windows Defender may flag it as an unrecognized app when you run SidekickRCsetup.exe. If you see a "Windows protected your PC" dialog, click on the "**More Info**" button and verify that the publisher is James Goossen in Sammamish (that's me!). Press "**Run anyway**" to install. Once enough people have installed Sidekick, Defender will start recognizing it and the warning will no longer appear.
 
 ![Defender warning](../assets/install-defender-warning.png){width="300"}
 

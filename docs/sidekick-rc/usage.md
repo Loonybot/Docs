@@ -12,7 +12,7 @@ During robot development, a typical **Sidekick** workflow is:
 Captures are stored on your Robot Controller's internal storage. **Sidekick** will try to ensure that at least 100 MB of free space is available at the beginning of every op mode by deleting the oldest **Sidekick** captures to make room. You can also configure **Sidekick** to delete captures after a certain number of days via the [Sk.setRetentionDays()](api-reference.md#sksetretentiondays) API.
 
 !!! warning
-    Don't turn off the robot while an op mode is running
+    Don't turn off the robot while an op mode is running. 
     **Sidekick** has to hook op mode termination in order to successfully save its logs. 
     If you turn off the robot while an op mode is still running, all of the Sidekick data for that run will be lost, except for Logcat data. It's best practice to always press stop (⏹) on the Driver Station once an op mode is complete, before turning off the robot. Autonomous op modes that properly terminate are not a problem, and for TeleOp op modes Sidekick will automatically stop capturing and save its files two minutes and one second after Start (▶) is pressed.
 
