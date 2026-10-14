@@ -3,13 +3,13 @@
 ??? faq "How do I report a Sidekick bug?"
     If you have a `.sidekick` capture file that causes **Sidekick** to crash or that captures a run-time failure, please email it to [bugreport@loonybot.com](mailto:bugreport@loonybot.com) along with a description of the problem. 
     We hate crashes but love bug reports that can reproduce them, so we always make it our top priority to fix such bugs when we get them. 
-    However, please consider your privacy: **Sidekick** itself does not save any _Personally Identifiable Information_, but your opMode may output PII to the data that is recorded.
+    However, please consider your privacy: **Sidekick** itself does not save any _Personally Identifiable Information_, but your op mode may output PII to the data that is recorded.
     Please be sure to send us only the `.sidekick` file and none of the video files.
 
     Bugs and suggestions can also be filed on [GitHub](https://github.com/Loonybot/SidekickRC/issues).
 
 ??? faq "My robot spontaneously reboots and Sidekick only shows Logcat data. What can I do?"
-    Problems where the robot reboots in the middle of an opMode are tough to fix.
+    Problems where the robot reboots in the middle of an op mode are tough to fix.
     **Sidekick** can't cleanly shut down and save its capture data when this happens, so you lose a lot of context. 
 
     **Sidekick** _does_ automatically show Logcat data leading up to the crash, however. 

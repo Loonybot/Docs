@@ -21,7 +21,7 @@ This can be helpful when you're having a debate as to whether bad behavior is a 
 
 **TurboRC** enables *turbo mode* for your robot. 
 It starts a low-priority thread when Start is pressed that consumes CPU cycles to cause the Linux kernel to change to the highest CPU clock 
-frequency until your opMode finishes.
+frequency until your op mode finishes.
 Use **Sidekick RC** to verify that the performance improvement for your control loop.
 
 

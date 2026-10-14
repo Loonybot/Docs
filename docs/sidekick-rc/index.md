@@ -2,6 +2,8 @@
 ## The essential software companion for First Tech Challenge
 **Sidekick RC** makes it easy to understand, iterate on, and improve your robot performance, whether you're a new Blocks user or a world champion.
 
+It's easy to install and use, fast, and robust. It works with Java, Kotlin, Blocks, and all FTC libraries. 
+
 ## Features
 - **Eliminate the headaches of connecting to your robot.** 
 FTC's Wi-Fi and wireless Android Debug Bridge (ADB) connections are notoriously unreliable and difficult to use, but now with **Sidekick** you get:
@@ -23,9 +25,20 @@ FTC's Wi-Fi and wireless Android Debug Bridge (ADB) connections are notoriously 
     - The Limelight camera stream, complete with visualizations.
     - The camera stream of regular cameras when ADB is connected. **Sidekick** records an MP4 of all visualizations that are output to the Robot Controller's "screen".
 - **Benefit from automatic analysis.** *Dr. Roboto* is a built-in mentor that diligently examines all recorded data and makes suggestions and points out errors and warnings. 
-It addresses both performance and correctness and is based on years of real-life mentoring experience.
+It addresses performance and correctness and is based on years of real-life mentoring experience.
 - **Enjoy intuitive analysis for humans.** It loves to graph and make it easy to navigate and understand the data.
 - **Extend its functionality.** Use optional API calls to enable features such as run-time assertions and performance timing.
-- **Back up your configuration.** We've had our robot configuration wiped more than once. Now it's saved after every opMode and can be restored with a single button.
+- **Back up your configuration.** We've had our robot configuration wiped more than once. Now that data is saved after every op mode and can be restored with a single button.
 
-**Sidekick** is easy to install and use, and it's fast and robust. It works with Java, Kotlin, Blocks, and all FTC libraries. 
+## Components
+Sidekick is comprised of two components:
+
+1. A **library** that you include in your team's robot code.
+
+    - Automatically captures a ton of data every time you run an op mode.
+
+2. A PC **application** that you install on your laptop. 
+
+    - Analyzes the data after-the-fact (*postmortem analysis*) with many different views.
+    - Manages the Wi-Fi and Android Debug Bridge (ADB) connection between your laptop and the robot, making it easy to push code from Android Studio, runs tools like Panels or FTC Dashboard, or download the Sidekick data.
+    - If connected while your op mode runs, it graphs data such as the Control Hub's current draw and temperature in real-time.

@@ -5,27 +5,22 @@ Use them to configure **Sidekick** or add data to the capture. All of the APIs a
 ## Sk.enable()
 `public static void enable(boolean enable);`
 
-Enable or disable **Sidekick** and inhibit its enable/disable opMode. 
+Enable or disable **Sidekick** and inhibit its enable/disable op mode. 
 
 When **Sidekick** is disabled, all of its functionality and methods (other than `Sk.enable()`) become _no-ops_.
 
-Calling this method (for either enabling or disabling) inhibits the **Sidekick** enable/disable opMode from getting added to your opMode list.
+Calling this method (for either enabling or disabling) inhibits the **Sidekick** enable/disable op mode from getting added to your op mode list.
 
-Because **Sidekick** needs to know this state early in the boot process, you can only call `Sk.enable()` from a method marked with the `@OnCreate` annotation, like this:
+Because **Sidekick** needs to know the new state early in the boot process, this method can only be called from an [@OnCreate](api-reference.md#setting-state-in-oncreate) method.
 
-```Java title="Disable Sidekick"
-@SuppressWarnings("unused")
-class ConfigureSidekick {
-    @OnCreate
-    public static void onCreate(Context context) {
-        Sk.disable(); // Temporarily disable Sidekick
-    }
-}
-```
+## Sk.setRetentionDays()
+`public static void setRetentionDays(int days);`
 
-This `@OnCreate` declaration can appear anywhere in your code and will apply globally for all of your opModes. 
-!!! warning
-    Be very careful of any code placed within the `@OnCreate` method as it executes during robot startup. If it raises an uncaught exception, it will cause an endless cycle of reboots and you'll need to reset the robot via means such as the `REV Hardware Client`.
+Set the number of days that **Sidekick** retains captures on the robot's internal storage.
+By default, **Sidekick** stores captures for up to 7 days.
+Regardless of this setting, **Sidekick** will try to free up at least 100 MB of storage at the beginning of every op mode by deleting the oldest captures.
+
+Because **Sidekick** needs to know the new state early in the boot process, this method can only be called from an [@OnCreate](api-reference.md#setting-state-in-oncreate) method.
 
 ## Sk.suppressIssues()
 `public static void suppressIssues(int... issueCodes);`
@@ -36,16 +31,9 @@ Suppress specific warnings, errors and suggestions from showing up in Dr. Robot'
 Sk.suppressIssues(101, 107);
 ```
 
-This method can be called from `@OnCreate` or from an opMode.
+This method can be called from `@OnCreate` or from an op mode.
 
-## Sk.setRetentionDays()
-`public static void setRetentionDays(int days);`
-
-Set the number of days that **Sidekick** retains captures on the robot's internal storage.
-By default, **Sidekick** stores captures for up to 7 days.
-Regardless of this setting, **Sidekick** will try to free up at least 100 MB of storage at the beginning of every opMode by deleting the oldest captures.
-
-## Sk.registerSerializer()'
+## Sk.registerSerializer()
 `public static <T> void registerSerializer(T sample, String format, Serializer<T> serializer);`
 
 Register a serializer to enable **Sidekick** to decode class objects when it saves (_serializes_) instances to the capture file and later displays them in the app for analysis.
@@ -109,4 +97,18 @@ The benefits of a serializer over `toString()` are:
 - The run-time overhead for a serializer is just a fraction of the CPU cost of `toString()`.
 - You can register serializers for classes of third party libraries that you use (e.g., Road Runner's `Pose2d` class) where it's not feasible to add a `toString()` method.
 
+## Setting state in @OnCreate
+**Sidekick** requires that some state APIs are callable only from `@OnCreate`. Any code that is marked `@OnCreate` gets executed before the first op mode can even be run. The annotation can be put on any method in any class of your code; here is a recommended template:
 
+```Java title="Set Sidekick state in @OnCreate"
+@SuppressWarnings("unused")
+class ConfigureSidekick {
+    @OnCreate
+    public static void onCreate(Context context) {
+        Sk.enable(); // Make Sidekick's enable/disable op mode disappear
+        Sk.setRetentionDays(31); // Increase from the 7 day default
+    }
+}
+```
+!!! warning
+    Be very careful of any code placed within the `@OnCreate` method as it executes during robot startup. If it raises an uncaught exception, it will cause an endless cycle of reboots and you'll need to reset the robot via means such as the `REV Hardware Client`.

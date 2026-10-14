@@ -34,8 +34,7 @@ theme:
 nav:
   - Home: index.md
   - Sidekick RC:
-      - Introducing Sidekick RC: sidekick-rc/index.md
-      - Defining Sidekick RC: sidekick-rc/overview.md
+      - Sidekick RC: sidekick-rc/index.md
       - Installation: sidekick-rc/installation.md
       - Usage: sidekick-rc/usage.md
       - API Reference: sidekick-rc/api-reference.md
